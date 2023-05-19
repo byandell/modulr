@@ -23,7 +23,7 @@ load_wgcna <- function(moddir, modobj = "WGCNA_objects_ms10.Rdata",
     
     list(
       ID = wgcna_ID(merge$newMEs),
-      dendro = merge$dendro,
+      dendro = geneTree,
       eigen = merge$newMEs,
       modules = module_factors(kMEs, merge$colors),
       params = wgcna_params(params))
